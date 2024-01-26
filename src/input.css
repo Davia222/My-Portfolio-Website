@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    cursor: none;
+    text-decoration: none;
+}
+
+
+.mouseOuter{
+    height: 40px;
+    width: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transition: 0.09s ;
+    z-index: 1;
+    margin-left: -15px;
+    margin-top: -10px;
+   
+}
+
+.mouseInner{
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    margin-left: 3px;
+    margin-top: 9px;
+    z-index: 1;
+}
+
+body{
+   background-image: linear-gradient(to right ,#1A294B 100%, #3B5379 0%);
+}
+
+
+.floating1{
+    animation: firstImg infinite 2s linear;
+    z-index: 0;
+    opacity: 0.5;
+    margin-left: -20px;
+    margin-top: -10px;
+    height: 200px;
+    rotate: -5deg;
+    transition: 0.8s ease-in-out;
+    
+}
+
+
+
+.floating1:hover{
+    margin-left: -100px ;
+    transition: 0.8s ease-in-out;
+    rotate: -10deg;
+}
+
+@keyframes firstImg {
+    0%{transform: translate(0,0px);}
+    50%{transform: translate(0,20px);}
+    100%{transform: translate(0,-0px);}
+
+}
