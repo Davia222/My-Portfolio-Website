@@ -1,6 +1,7 @@
 let mouseInner = document.querySelector(".mouseInner")
 let mouseOuter = document.querySelector(".mouseOuter")
 
+
 window.addEventListener("mousemove",(e)=>{
     let posX = e.clientX
     let posY = e.clientY
@@ -12,6 +13,6 @@ window.addEventListener("mousemove",(e)=>{
     mouseOuter.style.top = posY + "px"
 })
 
-window.addEventListener("click",()=>{
-    mouseOuter.style.color = "white"
+window.addEventListener("click", ()=>{
+   mouseInner.classList.toggle("mouse2")
 })
